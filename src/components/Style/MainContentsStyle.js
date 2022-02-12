@@ -15,7 +15,7 @@ export const SectionAppDemo = styled.section`
   margin: 100px 0;
 `;
 
-export const ContainerTextAppDemo = styled.article`
+export const ArticleTextAppDemo = styled.article`
   display: flex;
   flex-direction: column;
   & h2 {
@@ -70,7 +70,7 @@ export const ArticleNewsletter = styled.article`
   }
 `;
 
-export const Form = styled.form`
+export const FormStyle = styled.form`
   display: flex;
   margin-bottom: 20px;
   justify-content: space-evenly;
@@ -100,6 +100,101 @@ export const Form = styled.form`
         background-color: #00B870;
       }
     }
+  }
+`;
+
+export const SectionPrices = styled.section`
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 70px 0;
+  & article {
+    & img {
+      margin-top: 30px;
+    }
+  }
+`;
+
+export const ArticlePaymantText = styled.article`
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  & h2 {
+    width: 411px;
+    height: 32px;
+    color: #3D3D3D;
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  & p {
+    width: 450px;
+    height: 140px;
+    color: #3D3D3D;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 40px;
+    text-align: justify;
+  }
+  & a {
+    color: #5E20A4;
+  }
+`;
+
+export const SectionFramework = styled.section`
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  & h2 {
+    width: 469px;
+    height: 32px;
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 500;
+    color: #3D3D3D;
+  }
+  & p {
+    width: 784px;
+    height: 84px;
+    font-size: 16px;
+    line-height: 28px;
+    color: #3D3D3D;
+    margin-bottom: 30px;
+  }
+  & a {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #5E20A4;
+    margin-bottom: 40px;
+  }
+`;
+
+export const SectionDailyDiare = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 60px 0;
+  text-align: center;
+  & h2 {
+    width: 522px;
+    height: 32px;
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 500;
+    color: #3D3D3D;
+  }
+  & p {
+    width: 784px;
+    height: 84px;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: normal;
+    color: #3D3D3D;
   }
 `;
 
