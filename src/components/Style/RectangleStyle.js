@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 const MainStyle = styled.main`
   border: 1px solid #DFDFDF;
+  background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
