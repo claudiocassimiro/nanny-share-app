@@ -7,6 +7,7 @@ const MainStyle = styled.main`
   height: 100%;
   box-sizing: border-box;
   overflow-x: hidden;
+  background-color: #DFDFDF;
 `;
 
 export default MainStyle;
