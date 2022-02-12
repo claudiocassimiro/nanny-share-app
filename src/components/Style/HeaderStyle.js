@@ -7,6 +7,8 @@ const HeaderStyle = styled.header`
   width: 100%;
   height: 616px;
   background-image: url(${image}), url(${gradient});
+  background-repeat: no-repeat;
+  background-size: cover;
 `;
 
 export const SectionHeaderUp = styled.section`
