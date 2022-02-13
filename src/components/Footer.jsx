@@ -1,4 +1,5 @@
 import React from 'react';
+import useWindowSize from '../hooks/useWindowSize';
 import HapuLogo from '../img/HapuLogo.svg';
 import Union from '../img/Union.svg';
 import InstagramLogo from '../img/Instagram.svg';
@@ -11,6 +12,7 @@ import FooterStyle, {
 } from './Styles/FooterStyle';
 
 function Footer() {
+  const size = useWindowSize();
   
   return (
     <FooterStyle>
@@ -40,6 +42,9 @@ function Footer() {
           <img src={TwitterLogo} alt="twitter logo" />
         </div>
       </Article2>
+      { size.width <= 500 && (
+        <hr />
+      ) }
       <ParagraphCopyright>Copyright © 2017 Hapu PTY Limited All rights reserved</ParagraphCopyright>
     </FooterStyle>
   );
