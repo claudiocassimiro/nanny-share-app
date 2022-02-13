@@ -162,6 +162,11 @@ export const FormStyle = styled.form`
 `;
 
 export const SectionPrices = styled.section`
+  @media (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0;
+  }
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -177,7 +182,22 @@ export const ArticlePaymantText = styled.article`
   display: flex;
   flex-direction: column;
   align-self: flex-start;
+  @media (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+  }
   & h2 {
+    @media (max-width: 500px) {
+      margin-top: 30px;
+      width: 226px;
+      height: 64px;
+      font-size: 22px;
+      text-align: center;
+      margin-bottom: 15px;
+    }
     width: 411px;
     height: 32px;
     color: #3D3D3D;
@@ -187,6 +207,12 @@ export const ArticlePaymantText = styled.article`
     margin-bottom: 30px;
   }
   & p {
+    @media (max-width: 500px) {
+      width: 328px;
+      height: 196px;
+      text-align: center;
+      margin-bottom: 24px;
+    }
     width: 450px;
     height: 140px;
     color: #3D3D3D;
@@ -196,11 +222,19 @@ export const ArticlePaymantText = styled.article`
     text-align: justify;
   }
   & a {
+    @media (max-width: 500px) {
+      width: 328px;
+      height: 48px;
+      text-align: center;
+    }
     color: #5E20A4;
   }
 `;
 
 export const SectionFramework = styled.section`
+  @media (max-width: 500px) {
+    margin: 50px 0;
+  }
   margin: 100px 0;
   display: flex;
   flex-direction: column;
@@ -208,6 +242,12 @@ export const SectionFramework = styled.section`
   align-items: center;
   text-align: center;
   & h2 {
+    @media (max-width: 500px) {
+      width: 243px;
+      height: 64px;
+      font-size: 24px;
+      text-align: center;
+    }
     width: 469px;
     height: 32px;
     font-size: 28px;
@@ -216,6 +256,11 @@ export const SectionFramework = styled.section`
     color: #3D3D3D;
   }
   & p {
+    @media (max-width: 500px) {
+      width: 328px;
+      height: 196px;
+      text-align: center;
+    }
     width: 784px;
     height: 84px;
     font-size: 16px;
@@ -224,6 +269,11 @@ export const SectionFramework = styled.section`
     margin-bottom: 30px;
   }
   & a {
+    @media (max-width: 500px) {
+      width: 328px;
+      height: 48px;
+      margin-bottom: 20px;
+    }
     font-size: 16px;
     line-height: 24px;
     font-weight: 500;
@@ -239,6 +289,11 @@ export const SectionDailyDiare = styled.section`
   margin: 60px 0;
   text-align: center;
   & h2 {
+    @media (max-width: 500px) {
+      width: 328px;
+      height: 64px;
+      font-size: 24px;
+    }
     width: 522px;
     height: 32px;
     font-size: 28px;
@@ -247,6 +302,10 @@ export const SectionDailyDiare = styled.section`
     color: #3D3D3D;
   }
   & p {
+    @media (max-width: 500px) {
+      width: 328px;
+      height: 196px;
+    }
     width: 784px;
     height: 84px;
     font-size: 16px;
