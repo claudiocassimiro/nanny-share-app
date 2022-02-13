@@ -9,6 +9,10 @@ const HeaderStyle = styled.header`
   background-image: url(${image}), url(${gradient});
   background-repeat: no-repeat;
   background-size: cover;
+  @media (min-width: 360px) {
+    height: 540px;
+    background-position: 60%;
+  }
 `;
 
 export const SectionHeaderUp = styled.section`
@@ -25,6 +29,9 @@ export const SectionHeaderUp = styled.section`
 export const NavBar = styled.nav`
   margin-right: 500px;
   width: 500px;
+  @media (min-width: 360px) {
+    display: none;
+  }
 `;
 
 export const ContainerMenu = styled.ul`
@@ -48,6 +55,9 @@ export const ContainerBecomeButton = styled.section`
   display: flex;
   justify-content: space-around;
   width: 350px;
+  @media (min-width: 360px) {
+    width: 265px;
+  }
   & button {
     background-color: #00A870;
     border: none;
@@ -67,6 +77,9 @@ export const ContainerBecomeButton = styled.section`
     line-height: 20px;
     text-decoration: none;
     margin-right: 20px;
+    @media (min-width: 360px) {
+      display: none;
+    }
   }
 `;
 
@@ -80,14 +93,34 @@ export const SectionHeaderDown = styled.section`
 export const ArticleContainer = styled.article`
   display: flex;
   flex-direction: column;
+  @media (min-width: 360px) {
+    justify-content: center;
+    align-items: center;
+  }
   & h1 {
+    @media (min-width: 360px) {
+      text-align: center;
+      width: 272px;
+      height: 96px;
+      font-size: 28px;
+      line-height: 32px;
+      font-weight: bold;
+    }
     color: #fff;
     width: 514px;
     height: 80px;
     font-size: 40px;
     line-height: 48px;
+    font-weight: 500;
   }
   & p {
+    @media (min-width: 360px) {
+      width: 328px;
+      height: 84px;
+      font-size: 16px;
+      line-height: 28px;
+      text-align: center;
+    }
     color: #fff;
     width: 584px;
     height: 48px;
@@ -111,6 +144,9 @@ export const PlayerContainer = styled.div`
 
 export const ContainerImage = styled.article`
   margin-top: 30px;
+  @media (min-width: 360px) {
+    display: none;
+  }
 `;
 
 export default HeaderStyle;
