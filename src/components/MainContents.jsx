@@ -12,7 +12,7 @@ import MainStyle, {
   ArticlePaymantText,
   SectionFramework,
   SectionDailyDiare,
-} from './Style/MainContentsStyle';
+} from './Styles/MainContentsStyle';
 import Form from './Form';
 
 const MainContents = () => {

@@ -1,6 +1,6 @@
 import React from 'react';
 import profileImage from '../img/ProfileImage.svg';
-import MainStyle from './Style/RectangleStyle';
+import MainStyle from './Styles/RectangleStyle';
 
 const Rectangle = () => {
   

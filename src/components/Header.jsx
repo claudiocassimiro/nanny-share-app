@@ -11,7 +11,7 @@ import HeaderStyle, {
   ArticleContainer,
   PlayerContainer,
   ContainerImage,
-} from './Style/HeaderStyle';
+} from './Styles/HeaderStyle';
 
 const Header = () => {
   return (

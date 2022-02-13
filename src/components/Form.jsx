@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { FormStyle } from './Style/MainContentsStyle';
+import { FormStyle } from './Styles/MainContentsStyle';
 import sendDataToNewsletter from '../services/sendDataToNewsletter';
 
 function Form() {
