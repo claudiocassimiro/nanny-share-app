@@ -7,15 +7,29 @@ const FooterStyle = styled.footer`
   width: 100%;
   height: auto;
   background-color: #fff;
+  & hr {
+    width: 90%;
+  }
 `;
 
 export const Article1 = styled.article`
+  @media (max-width: 500px) {
+    margin-top: 40px;
+    height: auto;
+  }
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 300px;
   margin-top: 80px;
+  text-align: center;
   & h2 {
+    @media (max-width: 500px) {
+      width: 291px;
+      height: 32px;
+      font-size: 22px;
+      margin-bottom: 0;
+    }
     color: #3D3D3D;
     font-size: 28px;
     font-weight: 500;
@@ -23,6 +37,13 @@ export const Article1 = styled.article`
     margin-bottom: 16px;
   }
   & p {
+    @media (max-width: 500px) {
+      width: 304px;
+      height: 28px;
+      font-size: 16px;
+      line-height: 28px;
+      margin-top: 0;
+    }
     color: #3D3D3D;
     font-size: 18px;
     font-weight: 400;
@@ -65,12 +86,28 @@ export const Article1 = styled.article`
 `;
 
 export const Article2 = styled.article`
+  @media (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    height: 200px;
+    margin: 30px 0;
+  }
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 100%;
   margin: 60px 0;
   & nav {
+    @media (max-width: 500px) {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      align-items: center;
+      width: 200px;
+      height: 80px;
+      margin-left: 0;
+    }
     margin-left: 100px;
     display: flex;
     justify-content: space-around;
@@ -96,6 +133,7 @@ export const ParagraphCopyright = styled.p`
   line-height: 16px;
   color: #3D3D3D;
   margin-bottom: 32px;
+  opacity: 0.6;
 `;
 
 export default FooterStyle;
