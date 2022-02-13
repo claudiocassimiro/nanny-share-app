@@ -3,6 +3,7 @@ import useWindowSize from '../hooks/useWindowSize';
 import ImageSection1 from '../img/ImageSection1.svg';
 import ImageSection1Mobile from '../img/ImageSection1Mobile.svg';
 import ImageSection3 from '../img/ImageSection3.svg';
+import ImageSection3Mobile from '../img/ImageSection3Mobile.svg';
 import ImageSection4 from '../img/ImageSection4.svg';
 import ImageSection5 from '../img/ImageSection5.svg';
 import MainStyle, {
@@ -46,7 +47,11 @@ const MainContents = () => {
       <hr />
       <SectionPrices>
         <article>
-          <img src={ImageSection3} alt="Prices" />
+          { size.width <= 500 ? (
+            <img src={ImageSection3Mobile} alt="Prices" />
+          ) : (
+            <img src={ImageSection3} alt="Prices" />
+          )}
         </article>
         <ArticlePaymantText>
           <h2>Shared payments made simple</h2>
@@ -59,7 +64,10 @@ const MainContents = () => {
         <h2>A framework built for the long term</h2>
         <p>Childcare is for the long term. And you need a framework you can count on that gives your share long term viability and success. That’s why we’ve defined Hapu around our three tribal principles; clearly defined process, transparency over money and equality of participation.</p>
         <a href="#">Read how Hapu’s tribal background defines our app </a>
-        <img src={ImageSection4} alt="Nanny interface" />
+        {/* <img src={ImageSection4} alt="Nanny interface" /> */}
+        { size.width <= 500 ? '' : (
+          <img src={ImageSection5} alt="Nanny interface" />
+        )}
       </SectionFramework>
       <hr />
       <SectionDailyDiare>
