@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import image from '../../img/Image.svg';
 import gradient from '../../img/Gradient.svg';
+import imageMobile from '../../img/ImageMobile.svg';
+import gradientMobile from '../../img/GradientMobile.svg';
 
 const HeaderStyle = styled.header`
   font-family: 'Inter', sans-serif;
@@ -11,7 +13,7 @@ const HeaderStyle = styled.header`
   background-size: cover;
   @media (min-width: 360px) {
     height: 540px;
-    background-position: 60%;
+    background-image: url(${imageMobile}), url(${gradientMobile});
   }
 `;
 
