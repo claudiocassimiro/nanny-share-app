@@ -1,5 +1,7 @@
 import React from 'react';
-import ImageAppDemo from '../img/ImageSection1.svg';
+import useWindowSize from '../hooks/useWindowSize';
+import ImageSection1 from '../img/ImageSection1.svg';
+import ImageSection1Mobile from '../img/ImageSection1Mobile.svg';
 import ImageSection3 from '../img/ImageSection3.svg';
 import ImageSection4 from '../img/ImageSection4.svg';
 import ImageSection5 from '../img/ImageSection5.svg';
@@ -16,7 +18,7 @@ import MainStyle, {
 import Form from './Form';
 
 const MainContents = () => {
-
+  const size = useWindowSize();
   return (
     <MainStyle>
       <SectionAppDemo>
@@ -26,7 +28,11 @@ const MainContents = () => {
           <a href="#">Ready to get started?</a>
         </ArticleTextAppDemo>
         <article>
-          <img src={ImageAppDemo} alt="Image app demo" /> 
+          {size.width <= 500 ? (
+            <img src={ImageSection1Mobile} alt="Image app demo" />
+          ): (
+            <img src={ImageSection1} alt="Image app demo" />
+          )}
         </article>
       </SectionAppDemo>
       <hr />
