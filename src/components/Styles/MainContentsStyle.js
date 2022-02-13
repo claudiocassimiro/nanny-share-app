@@ -5,11 +5,21 @@ const MainStyle = styled.main`
   font-family: Inter, sans-serif;
   height: 100%;
   & hr {
+    @media (max-width: 500px) {
+      width: 90%;
+    }
     width: 50%;
   }
 `;
 
 export const SectionAppDemo = styled.section`
+  @media (max-width: 500px) {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+  }
   display: flex;
   justify-content: space-evenly;
   margin: 100px 0;
@@ -19,6 +29,14 @@ export const ArticleTextAppDemo = styled.article`
   display: flex;
   flex-direction: column;
   & h2 {
+    @media (max-width: 500px) {
+      width: 218px;
+      height: 64px;
+      font-size: 22px;
+      line-height: 32px;
+      text-align: center;
+      align-self: center;
+    }
     color: #3D3D3D;
     width: 429px;
     height: 64px;
@@ -27,10 +45,15 @@ export const ArticleTextAppDemo = styled.article`
     line-height: 32px;
   }
   & p {
+    @media (max-width: 500px) {
+      width: 328px;
+      height: 308px;
+      text-align: center;
+    }
     color: #4A4A4A;
     width: 444px;
     height: 224px;
-    text-align: justify;
+    text-align: left;
     font-weight: normal;
     font-size: 16px;
     line-height: 28px;
@@ -40,6 +63,9 @@ export const ArticleTextAppDemo = styled.article`
     }
   }
   & a {
+    @media (max-width: 500px) {
+      text-align: center;
+    }
     margin-top: 15px;
     color: #5E20A4;
     font-weight: bold;
@@ -47,6 +73,9 @@ export const ArticleTextAppDemo = styled.article`
 `;
 
 export const SectionNewsletter = styled.section`
+  @media (max-width: 500px) {
+    margin: 30px 0;
+  }
   margin: 60px 0;
   display: flex;
   flex-direction: column;
@@ -54,15 +83,29 @@ export const SectionNewsletter = styled.section`
 `;
 
 export const ArticleNewsletter = styled.article`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  margin: 30px;
   & h3 {
+    @media (max-width: 500px) {
+      width: 328px;
+      height: 40px;
+      font-size: 24px;
+    }
     color: #3D3D3D;
     font-size: 22px;
     line-height: 32px;
     font-weight: 500;
   }
   & p {
+    @media (max-width: 500px) {
+      width: 328px;
+      height: 84px;
+      font-size: 16px;
+      line-height: 28px;
+      margin-bottom: 32px;
+    }
     color: #3D3D3D;
     font-size: 18px;
     line-height: 24px;
@@ -71,6 +114,12 @@ export const ArticleNewsletter = styled.article`
 `;
 
 export const FormStyle = styled.form`
+  @media (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+    width: 328px;
+    height: 100%;
+  }
   display: flex;
   margin-bottom: 40px;
   justify-content: space-evenly;
@@ -78,6 +127,11 @@ export const FormStyle = styled.form`
   width: 48%;
   height: 50px;
   & input {
+    @media (max-width: 500px) {
+      width: 90%;
+      height: 48px;
+      margin-bottom: 10px;
+    }
     width: 232px;
     font-size: 14px;
     font-weight: normal;
@@ -88,6 +142,10 @@ export const FormStyle = styled.form`
     border: 1px solid #DFDFDF;
   }
   & button {
+    @media (max-width: 500px) {
+      width: 95%;
+      margin-top: 10px;
+    }
     width: 96px;
     color: #fff;
     height: 40px;

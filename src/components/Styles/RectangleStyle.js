@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const MainStyle = styled.main`
-  @media (min-width: 360px) {
+  @media (max-width: 500px) {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -18,7 +18,7 @@ const MainStyle = styled.main`
     margin-right: 20px;
   }
   & a {
-    @media (min-width: 360px) {
+    @media (max-width: 500px) {
       width: 212px;
       height: 40px;
       text-align: center;
@@ -30,7 +30,7 @@ const MainStyle = styled.main`
     line-height: 24px;
   }
   & p {
-    @media (min-width: 360px) {
+    @media (max-width: 500px) {
       width: 286px;
       height: 20px;
       font-size: 14px;

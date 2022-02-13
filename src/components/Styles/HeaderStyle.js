@@ -11,7 +11,7 @@ const HeaderStyle = styled.header`
   background-image: url(${image}), url(${gradient});
   background-repeat: no-repeat;
   background-size: cover;
-  @media (min-width: 360px) {
+  @media (max-width: 500px) {
     height: 540px;
     background-image: url(${imageMobile}), url(${gradientMobile});
   }
@@ -31,7 +31,7 @@ export const SectionHeaderUp = styled.section`
 export const NavBar = styled.nav`
   margin-right: 500px;
   width: 500px;
-  @media (min-width: 360px) {
+  @media (max-width: 500px) {
     display: none;
   }
 `;
@@ -57,7 +57,7 @@ export const ContainerBecomeButton = styled.section`
   display: flex;
   justify-content: space-around;
   width: 350px;
-  @media (min-width: 360px) {
+  @media (max-width: 500px) {
     width: 265px;
   }
   & button {
@@ -79,7 +79,7 @@ export const ContainerBecomeButton = styled.section`
     line-height: 20px;
     text-decoration: none;
     margin-right: 20px;
-    @media (min-width: 360px) {
+    @media (max-width: 500px) {
       display: none;
     }
   }
@@ -95,12 +95,12 @@ export const SectionHeaderDown = styled.section`
 export const ArticleContainer = styled.article`
   display: flex;
   flex-direction: column;
-  @media (min-width: 360px) {
+  @media (max-width: 500px) {
     justify-content: center;
     align-items: center;
   }
   & h1 {
-    @media (min-width: 360px) {
+    @media (max-width: 500px) {
       text-align: center;
       width: 272px;
       height: 96px;
@@ -116,7 +116,7 @@ export const ArticleContainer = styled.article`
     font-weight: 500;
   }
   & p {
-    @media (min-width: 360px) {
+    @media (max-width: 500px) {
       width: 328px;
       height: 84px;
       font-size: 16px;
@@ -146,7 +146,7 @@ export const PlayerContainer = styled.div`
 
 export const ContainerImage = styled.article`
   margin-top: 30px;
-  @media (min-width: 360px) {
+  @media (max-width: 500px) {
     display: none;
   }
 `;
