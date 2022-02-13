@@ -47,7 +47,7 @@ export const ArticleTextAppDemo = styled.article`
 `;
 
 export const SectionNewsletter = styled.section`
-  margin: 30px 0;
+  margin: 60px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,7 +55,7 @@ export const SectionNewsletter = styled.section`
 
 export const ArticleNewsletter = styled.article`
   text-align: center;
-  margin-bottom: 30px;
+  margin: 30px;
   & h3 {
     color: #3D3D3D;
     font-size: 22px;
@@ -72,7 +72,7 @@ export const ArticleNewsletter = styled.article`
 
 export const FormStyle = styled.form`
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   justify-content: space-evenly;
   align-items: center;
   width: 48%;
@@ -107,7 +107,7 @@ export const SectionPrices = styled.section`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin: 70px 0;
+  margin: 80px 0;
   & article {
     & img {
       margin-top: 30px;
@@ -143,7 +143,7 @@ export const ArticlePaymantText = styled.article`
 `;
 
 export const SectionFramework = styled.section`
-  margin: 50px 0;
+  margin: 100px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
