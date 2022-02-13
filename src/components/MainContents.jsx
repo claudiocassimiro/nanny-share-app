@@ -66,7 +66,7 @@ const MainContents = () => {
         <a href="#">Read how Hapu’s tribal background defines our app </a>
         {/* <img src={ImageSection4} alt="Nanny interface" /> */}
         { size.width <= 500 ? '' : (
-          <img src={ImageSection5} alt="Nanny interface" />
+          <img src={ImageSection4} alt="Nanny interface" />
         )}
       </SectionFramework>
       <hr />
