@@ -20,14 +20,14 @@ const Header = () => {
         <img src={logo} alt="logo" />
         <NavBar>
           <ContainerMenu>
-            <li><a href="#">Create Your Nanny Share</a></li>
-            <li><a href="#">Browse Shares</a></li>
-            <li><a href="#">Our Story</a></li>
+            <li><a href="#void">Create Your Nanny Share</a></li>
+            <li><a href="#void">Browse Shares</a></li>
+            <li><a href="#void">Our Story</a></li>
           </ContainerMenu>
         </NavBar>
         <ContainerBecomeButton>
           <button type="button">Become a Nanny Share Host</button>
-          <a href="#">Sing In</a>
+          <a href="#void">Sing In</a>
         </ContainerBecomeButton>
       </SectionHeaderUp>
       <SectionHeaderDown>
@@ -36,7 +36,7 @@ const Header = () => {
           <p>Hapu is Airbnb for nanny share. Share your home, nanny and costs and create new flexible, affordable solutions in childcare.</p>
           <PlayerContainer>
             <img src={playButton} alt="button play" />
-            <a href="#">See hapu in action (27 seconds)</a>
+            <a href="#void">See hapu in action (27 seconds)</a>
           </PlayerContainer>
         </ArticleContainer>
         <ContainerImage>
