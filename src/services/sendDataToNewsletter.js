@@ -12,7 +12,6 @@ const sendDataToNewsletter = async (data) => {
   } catch (e) {
     console.log(e.message);
   }
-  console.log('ok!!!');
 };
 
 export default sendDataToNewsletter;
