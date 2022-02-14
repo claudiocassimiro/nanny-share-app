@@ -26,15 +26,15 @@ function Footer() {
             <span>Takes less than 5 minutes</span>
           </div>
         </button>
-        <a href="#">Or browse local nanny-shares</a>
+        <a href="#void">Or browse local nanny-shares</a>
       </Article1>
       <Article2>
         <img src={HapuLogo} alt="app logo" />
         <nav>
-          <a href="#">Share Your Nanny</a>
-          <a href="#">Our Story</a>
-          <a href="#">Blog</a>
-          <a href="#">Terms & Privacy</a>
+          <a href="#void">Share Your Nanny</a>
+          <a href="#void">Our Story</a>
+          <a href="#void">Blog</a>
+          <a href="#void">Terms & Privacy</a>
         </nav>
         <div>
           <img src={InstagramLogo} alt="instagram logo" />
